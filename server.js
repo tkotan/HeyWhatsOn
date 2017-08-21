@@ -22,10 +22,12 @@ app.use(express.static('public'));
 /*******************************************
 Controllers
 *******************************************/
-var heywhatsonController = require('./controllers/heywhatsonController');
+// var heywhatsonController = require('./controllers/heywhatsonController');
 
-app.use('/heywhatson', heywhatsonController);
-
+// app.use('/heywhatson', heywhatsonController);
+app.get('/', function(req,res){
+  res.send({'message':'hello world'})
+})
 /*******************************************
 Listener
 *******************************************/
