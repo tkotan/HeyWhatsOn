@@ -1,0 +1,36 @@
+html{
+  height:100%;
+}
+
+body{
+display: flex;
+
+}
+
+#index{
+  background: #be5168;
+}
+
+.intro-container,.image-container{
+  padding: 2em;
+  padding-top: 15%;
+}
+
+.intro-container>h1{
+  padding-bottom: 2em;
+  font-family: 'Candal', sans-serif;
+  font-size: 3em;
+}
+
+.sign-in{
+  padding-top: 1em;
+}
+/*
+.sign-in>input{
+  opacity: 0.7;
+}*/
+
+img{
+  text-align: center;
+  border-radius: 10px;
+}

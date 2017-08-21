@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <button>Log Out</button>
+    <h1>Hey, {{user.name}}!</h1>
+
+    <div class="card-container">
+      <h2>Here's the latest from your favorites!</h2>
+      <div class="">
+        {{youtube.video.id}}
+      </div>
+    </div>
+
+    <div class="playlist-container">
+      <div class="">
+        <h4>Playlists</h4>
+      </div>
+      <a href="#">By Date</a>
+      <a href="#">A-Z</a>
+    </div>
+
+    <div class="favorites-container">
+      <input type="text" name="favorites" placeholder="Favorite YouTube channel name">
+      <input type="submit" name="search-channels" value="Search"><br>
+      <h4>Your Favorite YouTube Creators</h4>
+    </div>
+
+
+
+  </body>
+</html>
