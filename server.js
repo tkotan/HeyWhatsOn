@@ -29,6 +29,8 @@ Controllers
 app.get('/', function(req,res){
   res.send({'message':'hello world'})
 })
+
+app.get(‘/login’, function(res, req){ res.send(“logging”) }
 /*******************************************
 Listener
 *******************************************/

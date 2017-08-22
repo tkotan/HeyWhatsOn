@@ -21,19 +21,19 @@ app.config(function($routeProvider) {
   });
 });
 
-app.controller('mainController', function($scope){
+app.controller('mainController', function($scope,$http){
 
 });
 
-app.controller('playlistController', function($scope){
+app.controller('playlistController', function($scope,$http){
 
 });
 
-app.controller('ytcreatorsController', function($scope){
+app.controller('ytcreatorsController', function($scope,$http){
 
 });
 
-app.controller('latestController', function($scope){
+app.controller('latestController', function($scope,$http){
 
 });
 
