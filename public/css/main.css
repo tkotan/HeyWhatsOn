@@ -1,8 +1,8 @@
-html{
-  height:100%;
+*{
+  border: 1px solid blue;
 }
 
-body{
+.container{
 display: flex;
 
 }
@@ -16,8 +16,9 @@ display: flex;
   padding-top: 10%;
 }
 
-.intro-container>h1{
-  padding-bottom: 2em;
+h1{
+  padding-top: .40em;
+  padding-bottom: 1em;
   font-family: 'Candal', sans-serif;
   font-size: 3em;
 }
