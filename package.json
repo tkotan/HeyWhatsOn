@@ -14,6 +14,7 @@
   },
   "homepage": "https://github.com/tkotan/HeyWhatsOn#readme",
   "dependencies": {
+    "angular-ui-router": "^1.0.0-rc.1",
     "body-parser": "^1.17.2",
     "express": "^4.15.4",
     "method-override": "^2.3.9",

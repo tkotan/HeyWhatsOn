@@ -10,8 +10,6 @@ const express        = require('express'),
 /*******************************************
 Database
 *******************************************/
-// mongoose.connect('mongodb://localhost/hey_whats_on');
-// mongoose.connect ('mongodb://heroku_5shqnqlr:<dbpassword>@ds151433.mlab.com:51433/heroku_5shqnqlr');
 var mongoUri = process.env.MONGODB_URI || 'mongodb://localhost:27017/heywhatson';
 mongoose.connect(mongoUri);
 

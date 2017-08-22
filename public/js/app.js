@@ -1,6 +1,40 @@
-const app = angular.module('HeyWhatsOn', []);
+const app = angular.module('HeyWhatsOn', ["ngRoute"]);
 
+app.config(function($routeProvider) {
+  $routeProvider
+  .when("/", {
+    templateUrl: "home.html"
+    controller : 'mainController'
+  })
+  .when("/playlist", {
+    templateUrl: "playlist.html"
+    controller : 'playlistController'
+  })
+  .when("/ytcreators", {
+      templateUrl: "ytcreators.html"
+      controller : 'ytcreatorsController'
+  })
+  .when("/latest", {
+    templateUrl: "latest.html"
+    controller : 'latestController'
+  });
+});
 
+app.controller('mainController', function($scope){
+
+});
+
+app.controller('playlistController', function($scope){
+
+});
+
+app.controller('ytcreatorsController', function($scope){
+
+});
+
+app.controller('latestController', function($scope){
+
+});
 
 //
 // app.controller('MyController', ['$http', function($http){
