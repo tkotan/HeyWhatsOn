@@ -2,20 +2,21 @@ const app = angular.module('HeyWhatsOn', ["ngRoute"]);
 
 app.config(function($routeProvider) {
   $routeProvider
+
   .when("/", {
-    templateUrl: "home.html"
+    templateUrl: "home.html",
     controller : 'mainController'
   })
   .when("/playlist", {
-    templateUrl: "playlist.html"
+    templateUrl: "playlist.html",
     controller : 'playlistController'
   })
   .when("/ytcreators", {
-      templateUrl: "ytcreators.html"
+      templateUrl: "ytcreators.html",
       controller : 'ytcreatorsController'
   })
   .when("/latest", {
-    templateUrl: "latest.html"
+    templateUrl: "latest.html",
     controller : 'latestController'
   });
 });

@@ -1,11 +1,11 @@
-//Declarations & Requires
+Declarations & Requires
 const express = require('express');
 const router = express.Router();
 const Heywhatson = require('../models/Heywhatson.js');
 
 //home route
-router.get('/index', (req, res) => {
-		res.render('index.html');
+router.get('/', (req, res) => {
+		res.render('home.html');
 	});
 });
 

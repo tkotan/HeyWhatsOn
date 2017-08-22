@@ -1,14 +1,14 @@
-*{
+/**{
   border: 1px solid blue;
-}
+}*/
 
 .container{
 display: flex;
 
 }
 
-#index{
-  background: #be5168;
+body{
+  background: #lightgreen;
 }
 
 /*.intro-container,.image-container{
@@ -16,10 +16,14 @@ display: flex;
   padding-top: 10%;
 }*/
 
+.navbar-brand{
+  font-family: 'Candal', sans-serif;
+  font-size: 2em;
+  color: darkblue;
+}
 h1{
   padding-top: .40em;
   padding-bottom: 1em;
-  font-family: 'Candal', sans-serif;
   font-size: 3em;
 }
 /*
@@ -41,4 +45,20 @@ img{
    bottom:0;
    width:100%;
    text-align:center;
+}
+
+a{
+  text-decoration: none;
+  color: darkblue;
+
+}
+
+a:hover{
+  text-decoration: none;
+  cursor: pointer;
+  color: darkblue;
+}
+
+nav,footer{
+  background: lavender;
 }
