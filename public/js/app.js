@@ -32,4 +32,28 @@ app.controller('mainController', ['$http', function($http){
       console.log(response);
     })
   }
+  this.playlist = function(){
+    console.log('Dangit...I got it!');
+    // $http({
+    //   method:'GET',
+    //   url:'/api/login'
+    // }).then(
+    //   function(response){
+    //     console.log(response); --or--
+    $http.get(base + '/api/playlist', function(response){
+      console.log(response);
+    })
+  }
+  this.ytcreators = function(){
+    console.log('I will finish!');
+    // $http({
+    //   method:'GET',
+    //   url:'/api/login'
+    // }).then(
+    //   function(response){
+    //     console.log(response); --or--
+    $http.get(base + '/api/ytcreators', function(response){
+      console.log(response);
+    })
+  }
 }]);

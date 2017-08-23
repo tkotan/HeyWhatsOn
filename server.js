@@ -39,6 +39,14 @@ app.get('/api/login', function(req,res){
   res.json({"message":"yo"})
 })
 
+app.get('/api/playlist', function(req,res){
+  res.json({"message":"play it again"})
+})
+
+app.get('/api/ytcreators', function(req,res){
+  res.json({"message":"boom"})
+})
+
 /*******************************************
 Listener
 *******************************************/
