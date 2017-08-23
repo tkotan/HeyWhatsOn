@@ -31,7 +31,7 @@ Controllers
 // })
 
 // app.get(‘/login’, function(res, req){ res.send(“logging”) }
-app.get('/', function(req,res){
+app.get('/api', function(req,res){
   res.send({'message':'hello world'})
 })
 /*******************************************
