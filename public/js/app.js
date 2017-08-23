@@ -19,5 +19,16 @@ app.config(function($routeProvider) {
 });
 
 app.controller('mainController', ['$http', function($http){
-
+  const base = 'http://localhost:3000';
+  this.login = function(){
+    // $http({
+    //   method:'GET',
+    //   url:'/api/login'
+    // }).then(
+    //   function(response){
+    //     console.log(response); --or--
+    $http.get(base + '/api/login', function(response){
+      console.log(response);
+    })
+  }
 }]);

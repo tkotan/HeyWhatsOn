@@ -32,8 +32,13 @@ Controllers
 
 // app.get(‘/login’, function(res, req){ res.send(“logging”) }
 app.get('/api', function(req,res){
-  res.send({'message':'hello world'})
+  res.json({"message":"hello world"})
 })
+
+app.get('/api/login', function(req,res){
+  res.json({"message":"hi there"})
+})
+
 /*******************************************
 Listener
 *******************************************/
