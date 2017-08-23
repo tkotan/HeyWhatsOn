@@ -36,7 +36,7 @@ app.get('/api', function(req,res){
 })
 
 app.get('/api/login', function(req,res){
-  res.json({"message":"hi there"})
+  res.json({"message":"yo"})
 })
 
 /*******************************************

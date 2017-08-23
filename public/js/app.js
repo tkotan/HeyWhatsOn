@@ -9,11 +9,11 @@ app.config(function($routeProvider) {
   })
   .when("/playlist", {
     templateUrl: "playlist.html",
-    controller : 'playlistController'
+    controller : 'mainController'
   })
   .when("/ytcreators", {
       templateUrl: "ytcreators.html",
-      controller : 'ytcreatorsController'
+      controller : 'mainController'
   })
 
 });
@@ -21,6 +21,7 @@ app.config(function($routeProvider) {
 app.controller('mainController', ['$http', function($http){
   const base = 'http://localhost:3000';
   this.login = function(){
+    console.log('I am logging in');
     // $http({
     //   method:'GET',
     //   url:'/api/login'
