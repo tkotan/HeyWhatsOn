@@ -2,14 +2,11 @@
   border: 1px solid blue;
 }*/
 
-.container{
+/*.container{
 display: flex;
 
-}
+}*/
 
-body{
-  background: #lightgreen;
-}
 
 .intro-container,.image-container{
   /*padding: 1em;*/
@@ -19,6 +16,7 @@ body{
 
 .intro-container{
   padding-top: 1%;
+  text-align: center;
 }
 
 .navbar-brand{
@@ -59,6 +57,18 @@ a:hover{
   color: darkblue;
 }
 
-nav,footer{
+nav{
+  background: #cbdd39;
+}
+
+ul>*{
   background: #39cbdd;
+}
+
+footer{
+  background: #dd39cb;
+}
+
+.ng-scope{
+  background: #f4dfbf;
 }

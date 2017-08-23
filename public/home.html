@@ -1,18 +1,39 @@
-<div class="">
   <!-- <button ng-click="main.login()">Go for it!</button> -->
   <div class="container">
 
-         <div class="intro-container col">
+    <div class="intro-container col">
 
-           <h2>Welcome, YouTube aficionados!  Please sign in below.</h2>
+      <h2>Welcome, YouTube aficionados!  Please sign in below.</h2>
 
            <!-- <div class="sign-in"> -->
 
-               <div class="google button">
+               <!-- <div class="google button">
                  <a class="btn btn-block btn-social btn-google">
                  <span class="fa fa-google"></span> Sign in with Google
                 </a>
-              </div>
+              </div> -->
+      <div id="my-signin2"></div>
+      <script>
+        function onSuccess(googleUser) {
+          console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+        }
+        function onFailure(error) {
+          console.log(error);
+        }
+        function renderButton() {
+          gapi.signin2.render('my-signin2', {
+            'scope': 'profile email',
+            'width': 240,
+            'height': 50,
+            'longtitle': true,
+            'theme': 'dark',
+            'onsuccess': onSuccess,
+            'onfailure': onFailure
+          });
+        }
+      </script>
+
+      <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
               <p></p>
                <p>Don't have a Google account? <a href="https://accounts.google.com/SignUp?hl=en">Get one</a>!</p>
 
