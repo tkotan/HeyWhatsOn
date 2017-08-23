@@ -3,23 +3,7 @@ const express = require('express');
 const router = express.Router();
 const Heywhatson = require('../models/Heywhatson.js');
 
-//home route
-router.get('/', (req, res) => {
-		res.render('home.html');
-	});
-});
-
-//playlist route
-router.get('/playlist', (req, res) => {
-		res.render('playlist.html');
-	});
-});
-
-//yt creators route
-router.get('/ytcreators', (req, res) => {
-		res.render('ytcreators.html');
-	});
-});
+÷
 // //Show all playlists
 // router.get('/', (req, res)=>{
 //     Heywhatson.find({}, (err, foundItems)=>{
