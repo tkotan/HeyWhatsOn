@@ -19,7 +19,7 @@ app.config(function($routeProvider) {
 });
 
 app.controller('mainController', ['$http', function($http){
-  const base = 'http://localhost:3000';
+  const base = 'https://localhost:3000';
   this.login = function(){
     console.log('I am logging in');
     // $http({
